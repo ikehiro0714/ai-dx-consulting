@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Claude
+.claude/
+
+# MCP config
+.mcp.json
+
+# IDE
+.vscode/
+.idea/

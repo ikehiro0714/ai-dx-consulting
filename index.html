@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成AI導入支援サービス | AI DX コンサルティング</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* フォールバック用の最小限のスタイル */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">AI DX Consulting</h1>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#services">サービス</a></li>
+                        <li><a href="#ai-consulting">導入支援</a></li>
+                        <li><a href="#development">開発プラン</a></li>
+                        <li><a href="#training">研修</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="メニュー">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <!-- 背景動画 -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./video/fvbgv.mp4" type="video/mp4">
+        </video>
+        <!-- 動画オーバーレイ -->
+        <div class="hero-overlay"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">生成AIで、<br>ビジネスを革新する</h2>
+                <p class="hero-description">戦略設計から実装・教育まで、<br>企業のAI導入を包括的にサポート</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">サービスを見る</a>
+                    <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービスメニュー -->
+    <section id="services" class="services-menu">
+        <div class="container">
+            <h2 class="section-title">🚀 サービスメニュー</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧠</div>
+                    <h3 class="service-title">生成AI導入支援</h3>
+                    <p class="service-description">AI導入戦略・業務設計・PoC開発・内製化</p>
+                    <p class="service-price">月16.5万円〜</p>
+                    <a href="#ai-consulting" class="service-link">詳細を見る →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3 class="service-title">開発プラン（単発）</h3>
+                    <p class="service-description">n8n・Difyを用いた自動化フロー構築・チャットボット開発</p>
+                    <p class="service-price">実験導入版：¥110,000〜<br>本番導入版：¥220,000〜</p>
+                    <a href="#development" class="service-link">詳細を見る →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3 class="service-title">AI研修／eラーニング開発</h3>
+                    <p class="service-description">研修（単発・パッケージ）・教材制作支援</p>
+                    <p class="service-price">研修単発：¥110,000〜<br>パッケージ：¥550,000〜</p>
+                    <a href="#training" class="service-link">詳細を見る →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 生成AI導入支援 -->
+    <section id="ai-consulting" class="ai-consulting">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🧠 生成AI導入支援</h2>
+                <p class="section-subtitle">生成AIを経営・現場レベルに導入し、業務の再構築・効率化を図る。<br>単なるツール導入ではなく、<strong>思考・設計・教育まで包括的に支援</strong>します。</p>
+            </div>
+
+            <!-- 料金プラン -->
+            <div class="pricing-plans">
+                <div class="plan-card plan-light">
+                    <div class="plan-header">
+                        <span class="plan-badge">🟩</span>
+                        <h3 class="plan-name">ライト</h3>
+                        <p class="plan-price">¥165,000<span>/月</span></p>
+                    </div>
+                    <p class="plan-summary">月1MTG＋チャットサポート</p>
+                    <ul class="plan-features">
+                        <li>現状ヒアリング</li>
+                        <li>AI導入戦略の策定</li>
+                        <li>ツール選定・適用提案</li>
+                        <li>月1回 改善ミーティング（60分）</li>
+                        <li>チャットサポート</li>
+                    </ul>
+                    <div class="plan-recommended">
+                        <strong>こんな方におすすめ</strong>
+                        <p>まず何からAI化すべきか整理したい経営層・担当者</p>
+                    </div>
+                </div>
+
+                <div class="plan-card plan-standard">
+                    <div class="plan-header">
+                        <span class="plan-badge">🟦</span>
+                        <h3 class="plan-name">スタンダード</h3>
+                        <p class="plan-price">¥330,000<span>/月</span></p>
+                    </div>
+                    <p class="plan-summary">現場改善＋PoC提案</p>
+                    <ul class="plan-features">
+                        <li>ライトプランの内容</li>
+                        <li>部署別ヒアリング</li>
+                        <li>業務改善提案</li>
+                        <li>生成AI業務適用設計</li>
+                        <li>PoC（試験導入）提案・支援</li>
+                    </ul>
+                    <div class="plan-recommended">
+                        <strong>こんな方におすすめ</strong>
+                        <p>特定の部署や業務で実際にAIを導入して検証してみたい</p>
+                    </div>
+                </div>
+
+                <div class="plan-card plan-development">
+                    <div class="plan-header">
+                        <span class="plan-badge">🟥</span>
+                        <h3 class="plan-name">開発</h3>
+                        <p class="plan-price">¥550,000<span>/月</span></p>
+                    </div>
+                    <p class="plan-summary">実装＋教育＋レビュー</p>
+                    <ul class="plan-features">
+                        <li>スタンダードプランの内容</li>
+                        <li>n8n／Difyワークフロー開発</li>
+                        <li>操作マニュアル作成</li>
+                        <li>利用研修（60〜90分程度）</li>
+                        <li>運用レビュー／改善提案（毎月1回）</li>
+                    </ul>
+                    <div class="plan-recommended">
+                        <strong>こんな方におすすめ</strong>
+                        <p>試験導入から実運用フェーズへ移行したい企業</p>
+                    </div>
+                </div>
+
+                <div class="plan-card plan-architect">
+                    <div class="plan-header">
+                        <span class="plan-badge">🟨</span>
+                        <h3 class="plan-name">アーキテクト</h3>
+                        <p class="plan-price">¥880,000〜<span>/月</span></p>
+                        <p class="plan-note">※規模により変動</p>
+                    </div>
+                    <p class="plan-summary">全社業務再設計＋内製化</p>
+                    <ul class="plan-features">
+                        <li>開発プランの内容</li>
+                        <li>各部署のAIミーティング同席</li>
+                        <li>全社業務フローのAI適用再設計</li>
+                        <li>内製化体制構築サポート</li>
+                        <li>部署別ロードマップの作成</li>
+                    </ul>
+                    <div class="plan-recommended">
+                        <strong>こんな方におすすめ</strong>
+                        <p>全社レベルでDX／AI化を推進したい経営層</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- プラン比較表 -->
+            <div class="comparison-table-wrapper">
+                <h3 class="subsection-title">⚙️ プラン比較</h3>
+                <div class="table-scroll">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>項目</th>
+                                <th>🟩ライト</th>
+                                <th>🟦スタンダード</th>
+                                <th>🟥開発</th>
+                                <th>🟨アーキテクト</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>月額(税込)</td>
+                                <td>¥165,000</td>
+                                <td>¥330,000</td>
+                                <td>¥550,000</td>
+                                <td>¥880,000〜</td>
+                            </tr>
+                            <tr>
+                                <td>戦略設計</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>部署別ヒアリング</td>
+                                <td>-</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>PoC(試験導入)提案・開発</td>
+                                <td>-</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>実装支援（n8n／Dify）</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>社内研修</td>
+                                <td>-</td>
+                                <td>△（オプション）</td>
+                                <td>△（オプション）</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>内製化ロードマップ</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>全社業務再設計</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>チャットサポート</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>月次MTG</td>
+                                <td>1回</td>
+                                <td>1〜2回</td>
+                                <td>1〜3回</td>
+                                <td>1〜4回</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h3 class="subsection-title">💬 よくある質問</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">Q. 現在、生成AIツールを契約していないが大丈夫ですか？</button>
+                        <div class="faq-answer">
+                            <p>はい。相談後、ご契約頂く可能性はありますが、開始前に契約している必要はございません。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Q. １ヶ月のみの相談でも大丈夫ですか？</button>
+                        <div class="faq-answer">
+                            <p>はい。ライトプラン（¥165,000）は１ヶ月単位の導入方針整理にもご利用いただけます。スタンダード以上は提供内容の兼ね合いで数カ月での実装を前提としております。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Q. PoC（試験導入）や実装だけ依頼できますか？</button>
+                        <div class="faq-answer">
+                            <p>スタンダード以上のプランにて対応可能です。別途スポット対応でも請負可能です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 開発プラン -->
+    <section id="development" class="development">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">⚙️ 開発単発プラン</h2>
+                <p class="section-subtitle">すでに業務課題をお持ちで、その課題改善の開発をするプランです。<br>n8n・Dify・GASなどを活用して自動化・AI導入を実装します。</p>
+            </div>
+
+            <div class="development-plans">
+                <div class="dev-plan-card">
+                    <div class="dev-plan-header">
+                        <span class="dev-plan-badge">🟦</span>
+                        <h3 class="dev-plan-name">試験導入(PoC)開発</h3>
+                        <p class="dev-plan-price">¥110,000〜</p>
+                    </div>
+                    <p class="dev-plan-description">プロトタイプ開発で、まず1つの業務をAI・自動化したい方向け</p>
+                </div>
+
+                <div class="dev-plan-card">
+                    <div class="dev-plan-header">
+                        <span class="dev-plan-badge">🟩</span>
+                        <h3 class="dev-plan-name">本番導入ツール開発</h3>
+                        <p class="dev-plan-price">¥220,000〜</p>
+                    </div>
+                    <p class="dev-plan-description">業務自動化／AI導入構築で、本番環境への導入を目指す方向け</p>
+                </div>
+            </div>
+
+            <div class="service-details">
+                <h3 class="subsection-title">📋 サービス内容</h3>
+                <ul class="details-list">
+                    <li>ヒアリング（要件・業務フロー確認）</li>
+                    <li>開発設計（仕様・データ連携の整理）</li>
+                    <li>構築（n8n／Dify／GAS等）</li>
+                    <li>動作テスト・修正</li>
+                    <li>マニュアル（Notionまたはスライド形式）</li>
+                    <li>納品後1週間の軽微サポート</li>
+                </ul>
+            </div>
+
+            <div class="capabilities">
+                <h3 class="subsection-title">🧩 対応可能領域</h3>
+                <div class="capabilities-grid">
+                    <div class="capability-card">
+                        <h4>n8n構築</h4>
+                        <p>チャットツール通知／スプレッドシート連携／メール自動送信／API連携など</p>
+                    </div>
+                    <div class="capability-card">
+                        <h4>Dify開発</h4>
+                        <p>AIチャットボット／提案書生成／FAQ対応Bot／カスタムエージェント構築</p>
+                    </div>
+                    <div class="capability-card">
+                        <h4>GAS連携</h4>
+                        <p>データ同期／スプレッドシート更新／定期集計ジョブ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <h3 class="subsection-title">🧠 想定納期</h3>
+                <ul class="timeline-list">
+                    <li>シンプルな自動化：2~3週間前後</li>
+                    <li>複数フロー連携：1ヶ月程度</li>
+                </ul>
+                <p class="timeline-note">※ツールの納期であり、マニュアルは納期に含まれません</p>
+            </div>
+
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h3 class="subsection-title">💬 よくある質問</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">Q. コンサル契約なしで依頼できますか？</button>
+                        <div class="faq-answer">
+                            <p>はい。単発開発として個別依頼可能です。ただし、要件が不明確な場合は「スタンダードプラン」での設計支援を推奨します。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Q. 社内共有や教育もお願いできますか？</button>
+                        <div class="faq-answer">
+                            <p>可能です。使用マニュアルは作成・説明を実施しますが、教育が必要な場合は、別途「AI研修・eラーニング開発事業」と連携して対応します。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Q. 開発後の保守はありますか？</button>
+                        <div class="faq-answer">
+                            <p>納品後は軽微な修正を無償対応。継続的な改善は「継続サポート（月額¥50,000〜）」で承ります。※新機能追加等は、別途開発費用がかかります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI研修・eラーニング開発 -->
+    <section id="training" class="training">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎓 AI研修・eラーニング開発</h2>
+                <p class="section-subtitle">社員やチームが自らAIを使いこなせるようにするための、<strong>教育・研修・教材開発プログラム</strong>。<br>ChatGPT／Gemini／Claude／Dify／n8nなど、業務で活用できる実践的スキルを体系的に習得します。</p>
+            </div>
+
+            <div class="training-plans">
+                <div class="training-plan-card">
+                    <div class="training-plan-header">
+                        <span class="training-plan-badge">🟩</span>
+                        <h3 class="training-plan-name">研修単発</h3>
+                        <p class="training-plan-price">¥110,000／回</p>
+                        <p class="training-plan-note">（10名以下）<br>10名以上は上記金額に¥33,000/人を加算</p>
+                    </div>
+                    <p class="training-plan-description">単発のAI活用研修。生成AIの基礎理解や業務活用の具体例を学ぶセミナー型プラン。</p>
+                </div>
+
+                <div class="training-plan-card">
+                    <div class="training-plan-header">
+                        <span class="training-plan-badge">🟦</span>
+                        <h3 class="training-plan-name">研修パッケージ</h3>
+                        <p class="training-plan-price">¥550,000〜</p>
+                        <p class="training-plan-note">（10名以下）<br>10名以上は上記金額に¥55,000/人を加算</p>
+                    </div>
+                    <p class="training-plan-description">全5回構成（基礎〜実践）。AIを実務に落とし込むための実践研修型プログラム。</p>
+                </div>
+
+                <div class="training-plan-card">
+                    <div class="training-plan-header">
+                        <span class="training-plan-badge">🟥</span>
+                        <h3 class="training-plan-name">eラーニング開発</h3>
+                        <p class="training-plan-price">¥330,000/月〜</p>
+                        <p class="training-plan-note">（関わる領域による）</p>
+                    </div>
+                    <p class="training-plan-description">社内向けAI教材・動画講座制作支援。構成・台本・教材設計のディレクション。</p>
+                </div>
+            </div>
+
+            <!-- 研修パッケージ詳細 -->
+            <div class="training-packages">
+                <h3 class="subsection-title">🟦 研修パッケージ（5回構成）</h3>
+
+                <div class="package-tabs">
+                    <button class="package-tab active" data-package="ai-basics">🤖 生成AI基礎</button>
+                    <button class="package-tab" data-package="dify-n8n">⚙️ Dify／n8n基礎</button>
+                    <button class="package-tab" data-package="efficiency">⏱ 業務効率化実践</button>
+                </div>
+
+                <div class="package-content active" id="ai-basics">
+                    <h4 class="package-title">🤖 生成AI基礎</h4>
+                    <p class="package-description">AIを実務に落とし込むための実践研修型プログラム。基礎→業務応用→自動化活用の流れで、2ヶ月間で自社AIリテラシーを底上げします。</p>
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>回</th>
+                                <th>テーマ</th>
+                                <th>内容概要</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>第1回</td>
+                                <td>生成AIとは何か</td>
+                                <td>ChatGPT／Geminiの仕組みとリスク理解</td>
+                            </tr>
+                            <tr>
+                                <td>第2回</td>
+                                <td>プロンプト設計入門</td>
+                                <td>質の高い出力を得るための指示の出し方</td>
+                            </tr>
+                            <tr>
+                                <td>第3回</td>
+                                <td>活用事例と業務応用</td>
+                                <td>事務・営業・広報・開発など職種別事例</td>
+                            </tr>
+                            <tr>
+                                <td>第4回</td>
+                                <td>実践ワーク</td>
+                                <td>自社の課題をAIで解決する演習</td>
+                            </tr>
+                            <tr>
+                                <td>第5回</td>
+                                <td>成果共有・まとめ</td>
+                                <td>活用アイデア発表・社内展開の方向性提案</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="package-recommended">
+                        <strong>🧩 こんな企業におすすめ</strong>
+                        <ul>
+                            <li>社員のAI理解を統一したい</li>
+                            <li>ChatGPTの効果的な使い方を社内で教育したい</li>
+                            <li>AI導入を検討中でまず全体のリテラシーを上げたい</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-content" id="dify-n8n">
+                    <h4 class="package-title">⚙️ Dify／n8n基礎（業務自動化入門）</h4>
+                    <p class="package-description">AIを使った業務を自動化できるようになるための研修です。Dify・n8nのノーコードツールを使った業務自動化やワークフロー設計を学ぶ実践講座です。</p>
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>回</th>
+                                <th>テーマ</th>
+                                <th>内容概要</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>第1回</td>
+                                <td>Dify／n8nの概要</td>
+                                <td>ツールの特徴と導入の全体像</td>
+                            </tr>
+                            <tr>
+                                <td>第2回</td>
+                                <td>基本操作とAPI理解</td>
+                                <td>ノード・トリガー・Webhookの基礎</td>
+                            </tr>
+                            <tr>
+                                <td>第3回</td>
+                                <td>実践ワーク①</td>
+                                <td>Slack・Sheets・Gmail連携の構築演習</td>
+                            </tr>
+                            <tr>
+                                <td>第4回</td>
+                                <td>実践ワーク②</td>
+                                <td>DifyでAI自動応答／レポート生成</td>
+                            </tr>
+                            <tr>
+                                <td>第5回</td>
+                                <td>応用・運用設計</td>
+                                <td>運用保守・セキュリティ・社内展開方法</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="package-recommended">
+                        <strong>🧩 こんな企業におすすめ</strong>
+                        <ul>
+                            <li>ツールを開発するまでいかない業務の自動化を進めたい</li>
+                            <li>社内の定常業務（報告・通知・集計）を自動化したい</li>
+                            <li>Difyやn8nのツール導入を検討しているが、どこから始めていいか分からない</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-content" id="efficiency">
+                    <h4 class="package-title">⏱ 業務効率化実践（AI×日常業務）</h4>
+                    <p class="package-description">ChatGPTやGeminiを使って「明日からすぐ使える」業務効率化スキルを学ぶ。AIによる文章作成・会議記録・報告書作成など、実務に直結する内容です。</p>
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>回</th>
+                                <th>テーマ</th>
+                                <th>内容概要</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>第1回</td>
+                                <td>業務棚卸しとAI化ポイント分析</td>
+                                <td>どの作業をAIに任せるかを見極める</td>
+                            </tr>
+                            <tr>
+                                <td>第2回</td>
+                                <td>文章生成スキル</td>
+                                <td>メール／提案書／議事録の自動生成演習</td>
+                            </tr>
+                            <tr>
+                                <td>第3回</td>
+                                <td>Excel・スプレッドシート活用</td>
+                                <td>データ整理・分析の自動化</td>
+                            </tr>
+                            <tr>
+                                <td>第4回</td>
+                                <td>画像・動画生成の基礎</td>
+                                <td>Canva＋AI画像／動画の活用法</td>
+                            </tr>
+                            <tr>
+                                <td>第5回</td>
+                                <td>個別改善プラン作成</td>
+                                <td>各参加者が自社業務にAIを組み込む計画立案</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="package-recommended">
+                        <strong>🧩 こんな企業におすすめ</strong>
+                        <ul>
+                            <li>事務・営業・広報などの現場業務を効率化したい</li>
+                            <li>ChatGPT／Geminiを実務で活かしたい</li>
+                            <li>社員の"AI×生産性"スキルを底上げしたい</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h3 class="subsection-title">💬 よくある質問</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">Q. 研修はオンライン／オフラインどちらで実施できますか？</button>
+                        <div class="faq-answer">
+                            <p>双方対応可能です。オンラインはZoomまたはGoogle Meet、対面の場合は東京近郊で実施します。※東京近郊以外は別途交通費で対応いたします。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Q. 社内特有の業務内容を題材にできますか？</button>
+                        <div class="faq-answer">
+                            <p>可能です。事前ヒアリングを行い、御社専用カリキュラムとして構築します。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Q. 研修内容を自社内で再利用してもいいですか？</button>
+                        <div class="faq-answer">
+                            <p>はい。納品資料・動画はすべて社内共有・再利用可能です。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Q. eラーニング教材だけ依頼することはできますか？</button>
+                        <div class="faq-answer">
+                            <p>はい。研修なしの教材制作・動画作成のみの受託も可能です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-subtitle">サービスに関するご質問・ご相談は、お気軽にお問い合わせください</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/ikehiro0714@gmail.com" method="POST">
+                    <!-- FormSubmit設定 -->
+                    <input type="hidden" name="_subject" value="【AI DX Consulting】お問い合わせ">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_next" value="">
+
+                    <div class="form-group">
+                        <label for="company">会社名 <span class="required">*</span></label>
+                        <input type="text" id="company" name="会社名" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">*</span></label>
+                        <input type="text" id="name" name="お名前" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="電話番号">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">興味のあるサービス</label>
+                        <select id="service" name="興味のあるサービス">
+                            <option value="">選択してください</option>
+                            <option value="生成AI導入支援">生成AI導入支援</option>
+                            <option value="開発プラン（単発）">開発プラン（単発）</option>
+                            <option value="AI研修／eラーニング開発">AI研修／eラーニング開発</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                        <textarea id="message" name="お問い合わせ内容" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">AI DX Consulting</h3>
+                    <p class="footer-description">生成AIで、ビジネスを革新する</p>
+                </div>
+                <div class="footer-links">
+                    <h4>サービス</h4>
+                    <ul>
+                        <li><a href="#ai-consulting">生成AI導入支援</a></li>
+                        <li><a href="#development">開発プラン</a></li>
+                        <li><a href="#training">AI研修</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>お問い合わせ</h4>
+                    <p>サービスに関するご質問は<br>お気軽にお問い合わせください</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI DX Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
