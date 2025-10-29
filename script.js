@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.textContent = '送信中...';
 
             // n8n WebhookにJSON形式で送信
-            const webhookUrl = 'https://n8n-gv3ek-u44320.vm.elestio.app/webhook-test/9471adbb-d9c9-4bbc-8695-cfe24edec947';
+            const webhookUrl = 'https://n8n-gv3ek-u44320.vm.elestio.app/webhook/9471adbb-d9c9-4bbc-8695-cfe24edec947';
 
             fetch(webhookUrl, {
                 method: 'POST',
