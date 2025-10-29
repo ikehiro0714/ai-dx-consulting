@@ -160,25 +160,28 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             submitBtn.textContent = '送信中...';
 
-            // FormSubmitにAjax送信（ページ遷移なし）
-            fetch(contactForm.action, {
+            // n8n WebhookにJSON形式で送信
+            const webhookUrl = 'https://n8n-gv3ek-u44320.vm.elestio.app/webhook-test/9471adbb-d9c9-4bbc-8695-cfe24edec947';
+
+            fetch(webhookUrl, {
                 method: 'POST',
-                body: formData,
                 headers: {
-                    'Accept': 'application/json'
-                }
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formObject)
             })
-            .then(response => response.json())
-            .then(data => {
-                // 成功時のポップアップ表示
-                showSuccessPopup('送信完了。確認次第担当よりご連絡させていただきます。');
-                contactForm.reset();
+            .then(response => {
+                if (response.ok) {
+                    // 成功時のポップアップ表示
+                    showSuccessPopup('送信完了。確認次第担当よりご連絡させていただきます。');
+                    contactForm.reset();
+                } else {
+                    throw new Error('送信に失敗しました');
+                }
             })
             .catch(error => {
                 console.error('Error:', error);
-                // エラーでも成功と表示（FormSubmitは送信済みの可能性が高い）
-                showSuccessPopup('送信完了。確認次第担当よりご連絡させていただきます。');
-                contactForm.reset();
+                showNotification('送信に失敗しました。もう一度お試しください。', 'error');
             })
             .finally(() => {
                 // 送信ボタンを再有効化
