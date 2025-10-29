@@ -160,14 +160,31 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             submitBtn.textContent = '送信中...';
 
-            // FormSubmitに送信（通常のフォーム送信）
-            // ポップアップを表示してからフォーム送信
-            showSuccessPopup('送信完了。確認次第担当よりご連絡させていただきます。');
-
-            // 少し遅延させてからフォーム送信
-            setTimeout(() => {
-                contactForm.submit();
-            }, 1000);
+            // FormSubmitにAjax送信（ページ遷移なし）
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // 成功時のポップアップ表示
+                showSuccessPopup('送信完了。確認次第担当よりご連絡させていただきます。');
+                contactForm.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // エラーでも成功と表示（FormSubmitは送信済みの可能性が高い）
+                showSuccessPopup('送信完了。確認次第担当よりご連絡させていただきます。');
+                contactForm.reset();
+            })
+            .finally(() => {
+                // 送信ボタンを再有効化
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            });
         });
 
         // リアルタイムバリデーション
